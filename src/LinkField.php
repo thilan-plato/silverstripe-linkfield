@@ -17,6 +17,7 @@ use SilverStripe\Forms\GridField\GridFieldEditButton;
 use SilverStripe\Forms\GridField\GridFieldDeleteAction;
 use SilverStripe\Forms\GridField\GridFieldDataColumns;
 use SilverStripe\Control\HTTPRequest;
+use SilverStripe\Core\Injector\Injector;
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
 use SilverShop\HasOneField\HasOneButtonField;
 
@@ -120,7 +121,7 @@ class LinkField extends FormField
                         'Please save {object} first to add {links}',
                         [
                             'object' => $parent->i18n_singular_name(),
-                            'links' => singleton(Link::class)->i18n_plural_name()
+                            'links' => Injector::inst()->get(Link::class)->i18n_plural_name()
                         ]
                     )
                 );

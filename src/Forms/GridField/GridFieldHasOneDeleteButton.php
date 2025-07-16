@@ -7,7 +7,7 @@ use SilverStripe\Forms\GridField\GridField_HTMLProvider;
 use SilverStripe\Forms\GridField\GridField_ActionProvider;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Forms\GridField\GridField_FormAction;
-use JsonSchema\Exception\ValidationException;
+use SilverStripe\ORM\ValidationException;
 use SilverStripe\Control\Controller;
 
 class GridFieldHasOneDeleteButton implements GridField_HTMLProvider, GridField_ActionProvider

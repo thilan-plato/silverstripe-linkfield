@@ -13,3 +13,6 @@ web.config
 prepros.cfg
 node_modules
 vendor
+client/dist
+npm-debug.log
+yarn-error.log

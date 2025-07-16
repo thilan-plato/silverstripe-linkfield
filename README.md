@@ -12,11 +12,30 @@ Composer is the recommended way of installing SilverStripe modules.
 composer require gorriecoe/silverstripe-linkfield
 ```
 
+## Frontend Assets
+
+To build the frontend assets (CSS), run:
+
+```bash
+npm install
+npm run build
+```
+
+For development with automatic rebuilding:
+
+```bash
+npm run watch
+```
+
 ## Requirements
 
 - gorriecoe/silverstripe-link ^1.0
-- silvershop/silverstripe-hasonefield 3.0.1. [See Issue #11](https://github.com/gorriecoe/silverstripe-linkfield/issues/11#issuecomment-497077936)
-- symbiote/silverstripe-gridfieldextensions 3.1
+- silvershop/silverstripe-hasonefield ^3.0 || ^4.0 || ^5.0
+- symbiote/silverstripe-gridfieldextensions ^3.1 || ^4.0 || ^5.0
+
+## Compatibility
+
+This module is compatible with both **Silverstripe 4** and **Silverstripe 5**. See [COMPATIBILITY.md](COMPATIBILITY.md) for detailed information about the changes made for cross-version compatibility.
 
 ## Maintainers
 
